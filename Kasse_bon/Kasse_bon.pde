@@ -2,6 +2,7 @@ void setup(){
   size(400,600);
 }
 //Skriv navn+adresse
+
 void draw(){
   background(255,255,255);
   noLoop();
@@ -30,26 +31,32 @@ void draw(){
   text("Varenavn:",190,160);
   text("Is",245,160);
   text("Beløb:",300,160);
+  
   //Beregn pris2
    int v2 = Antal3 * Antal4;
   text(v2,335,160);
+  
   //Beregn total beløb
   text("Beløb uden moms:",240,500);
   int total = v1 + v2;
   text(total,340,500);
+  
   //Beregn momsen
   float belobMedMoms = beregnMoms(total);
   text("Beløb med moms:",240,520);
   text(belobMedMoms,340,520);
+  
   //Beregn momsbeløbet
   float momsbb = momsBelob(total);
   text("Momsbeløb:",240,540);
   text(momsbb,340,540);
 }
+
 //beregner momsen
 float beregnMoms(int total){
     return total * 1.25;
 }
+
 //beregner momsbeløbet
 float momsBelob(int total){
   return total * 1.25 - total;
