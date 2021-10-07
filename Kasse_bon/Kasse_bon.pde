@@ -20,7 +20,7 @@ void draw(){
   text("Varenavn:",190,135);
   text("Kage",245,135);
   text("Beløb:",300,135);
-  int v1 = Antal1 * Antal2;
+  int v1 = Antal1 * Antal2;//Hvad er v1
   text(v1,335,135);
   text("Antal:",50,160);
   int Antal3 =  2;//Antal hvad?
@@ -34,7 +34,7 @@ void draw(){
   //Måske lave nogle flere mellemrum ovenover, i koden.
   
   //Beregn pris2
-   int v2 = Antal3 * Antal4;
+   int v2 = Antal3 * Antal4;//Hvad er v2
   text(v2,335,160);
   
   //Beregn total beløb
